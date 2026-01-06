@@ -8,7 +8,7 @@ import os
 import webbrowser
 import re
 
-SERVER_IP = "192.168.56.1"
+SERVER_IP = "YOUR-DNS-IPV4"
 PORT = 5555
 BUFFER_SIZE = 4096
 
@@ -236,3 +236,4 @@ if __name__ == "__main__":
     root = TkinterDnD.Tk()
     app = ChatZFoxClient(root)
     root.mainloop()
+
