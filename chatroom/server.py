@@ -33,7 +33,8 @@ def handle_client(client):
 
 while True:
     client, addr = server.accept()
-    print(Kurac wurde gefunden:", addr)
+    print(Gefunden:", addr)
     clients.append(client)
     threading.Thread(target=handle_client, args=(client,), daemon=True).start()
+
 
