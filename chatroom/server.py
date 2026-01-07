@@ -10,7 +10,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST, PORT))
 server.listen()
 
-print("Server läuft...")
+print("Dein scheiß n-wort server läuft...")
 
 def broadcast(data, sender=None):
     for c in clients[:]:
@@ -33,6 +33,7 @@ def handle_client(client):
 
 while True:
     client, addr = server.accept()
-    print("Verbunden:", addr)
+    print(Kurac wurde gefunden:", addr)
     clients.append(client)
     threading.Thread(target=handle_client, args=(client,), daemon=True).start()
+
